@@ -10,6 +10,7 @@
     "@types/node": "^16.18.83",
     "@types/react": "^18.2.59",
     "@types/react-dom": "^18.2.19",
+    "bootstrap-icons": "^1.11.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
