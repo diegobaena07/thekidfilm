@@ -7,7 +7,9 @@ import { Inicio } from './pages/Inicio/Inicio';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Inicio />
+    <div className='fondo'>
+      <Inicio />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

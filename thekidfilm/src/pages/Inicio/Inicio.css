@@ -1,0 +1,104 @@
+.Inicio_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 83px;
+    background: #252525;
+    height: 90vh;
+}
+
+.Inicio_Nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.Inicio_LogoPrincipal img{
+    width: 650px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.Inicio_sobrenosotrosContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Inicio_SobreNosotros{
+    font-family: "Abel", sans-serif;
+    font-size: 23px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-bottom: 25px;
+}
+
+.Inicio_GrupoTrabajo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.Inicio_Branding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px 0px 40px 0px;
+    background: #252525;
+}
+
+.Inicio_Trabajo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Inicio_Trabajo img{
+    object-fit: cover;
+}
+
+.Inicio_BrandingTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 10px;
+}
+
+.Inicio_Titulo h1{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.Inicio_Contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFFFFF;
+    height: 50vh;
+}
+
+.Inicio_Contacto h1{
+    font-size: 35px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.Inicio_Contacto h3{
+    font-family: "Abel", sans-serif;
+    font-size: 45px;
+}

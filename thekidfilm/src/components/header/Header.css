@@ -8,6 +8,7 @@
 
 .container_header{
     width: 90%;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
