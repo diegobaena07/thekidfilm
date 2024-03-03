@@ -1,0 +1,59 @@
+.Covers_ImagenesContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Covers_PortadaContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Covers_PortadaContainer:hover .Covers_Descripcion {
+    opacity: 1; /* Hace que la descripción sea visible al pasar el cursor sobre el contenedor */
+}
+
+.Covers_PortadaContainer img {
+    object-fit: cover;
+}
+
+.Covers_Descripcion {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    height: 100%;
+    background-color: #0000009d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+    opacity: 0; /* Oculta la descripción por defecto */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+
+.Covers_Descripcion h2 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.Covers_Descripcion p{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-style: normal;
+    text-align: start;
+    font-family: "Abel", sans-serif;
+}
