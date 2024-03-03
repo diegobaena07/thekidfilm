@@ -1,7 +1,10 @@
-import React, { FC } from "react";
+import { FC } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header: FC = () => {
+
+    const location = useLocation();
 
     return (
         <>
@@ -14,12 +17,24 @@ const Header: FC = () => {
                         <div className="Header_menu">
                             <nav>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">films</a></li>
-                                    <li><a href="#">covers</a></li>
-                                    <li><a href="#">eventos</a></li>
-                                    <li><a href="#">ovts</a></li>
-                                    <li><a href="#">bts</a></li>
+                                    <Link to={"/home"}>
+                                        <span className={location.pathname === "/home" ? "active-link" : ""}>Home</span>
+                                    </Link>
+                                    <Link to={"/films"}>
+                                        <span className={location.pathname === "/films" ? "active-link" : ""}>films</span>
+                                    </Link>
+                                    <Link to={"/covers"}>
+                                        <span className={location.pathname === "/covers" ? "active-link" : ""}>covers</span>
+                                    </Link>
+                                    <Link to={"/eventos"}>
+                                        <span className={location.pathname === "/eventos" ? "active-link" : ""}>eventos</span>
+                                    </Link>
+                                    <Link to={"/ovts"}>
+                                        <span className={location.pathname === "/ovts" ? "active-link" : ""}>ovts</span>
+                                    </Link>
+                                    <Link to={"/bts"}>
+                                        <span className={location.pathname === "/bts" ? "active-link" : ""}>bts</span>
+                                    </Link>
                                 </ul>
                             </nav>
                         </div>

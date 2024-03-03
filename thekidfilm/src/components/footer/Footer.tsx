@@ -1,7 +1,10 @@
-import React, { FC } from "react";
+import { FC } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Footer.css";
 
 const Footer: FC = () => {
+
+    const location = useLocation();
 
     return (
         <>
@@ -19,16 +22,28 @@ const Footer: FC = () => {
                             </div>
                             <div className="Footer_menu">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">films</a></li>
+                                    <Link to={"/home"}>
+                                        <span className={location.pathname === "/home" ? "actic" : ""}>Home</span>
+                                    </Link>
+                                    <Link to={"/films"}>
+                                        <span className={location.pathname === "/films" ? "actic" : ""}>films</span>
+                                    </Link>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">covers</a></li>
-                                    <li><a href="#">eventos</a></li>
+                                    <Link to={"/covers"}>
+                                        <span className={location.pathname === "/covers" ? "actic" : ""}>covers</span>
+                                    </Link>
+                                    <Link to={"/eventos"}>
+                                        <span className={location.pathname === "/eventos" ? "actic" : ""}>eventos</span>
+                                    </Link>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">ovts</a></li>
-                                    <li><a href="#">bts</a></li>
+                                    <Link to={"/ovts"}>
+                                        <span className={location.pathname === "/ovts" ? "actic" : ""}>ovts</span>
+                                    </Link>
+                                    <Link to={"/bts"}>
+                                        <span className={location.pathname === "/bts" ? "actic" : ""}>bts</span>
+                                    </Link>
                                 </ul>
                             </div>
                         </div>

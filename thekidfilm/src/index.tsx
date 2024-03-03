@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
-import { Inicio } from './pages/Inicio/Inicio';
+import { TheKidFilmWrapper } from './pages/TheKidFilmWrapper';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className='fondo'>
-      <Inicio />
+      <TheKidFilmWrapper />
     </div>
   </React.StrictMode>,
   document.getElementById('root')

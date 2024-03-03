@@ -38,29 +38,31 @@
 .Footer_menu ul {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.Footer_menu ul li {
-    margin-bottom: 10px;
-    list-style: none;
-}
-
-.Footer_menu ul li a {
+.Footer_menu ul a {
     color: #FFFFFF;
     font-family: "Abel", sans-serif;
     text-transform: uppercase;
     font-size: 15px;
     transition: all 300ms ease;
+    margin-bottom: 5px;
+    text-decoration: none;
 }
 
-.Footer_menu ul li a:hover{
+.Footer_menu ul a:hover,
+.actic {
     color: #B20101;
     transition: all 300ms ease;
+    border-bottom: 2px solid #B20101;
 }
 
-.Footer_menu ul li a:active{
+.Footer_menu ul a:active{
     color: #B20101;
     transition: all 300ms ease;
+    border-bottom: 1px solid #B20101;
 }
 
 .Footer_copi{
